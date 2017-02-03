@@ -1,0 +1,22 @@
+{
+	"development": {
+    "redis": {
+      "url":"redis://127.0.0.1:6379"
+    }
+  },
+  "beta": {
+    "redis": {
+      "url":"redis://127.0.0.1:6379" 
+    }
+  },
+  "test": {
+    "redis": {
+      "url":"redis://pub-redis-14996.us-east-1-2.5.ec2.garantiadata.com:14996" 
+    }
+  },
+  "production": {
+    "redis": {
+      "url":"redis://pub-redis-14996.us-east-1-2.5.ec2.garantiadata.com:14996" 
+    }
+  }
+}

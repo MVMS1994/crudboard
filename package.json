@@ -1,0 +1,40 @@
+{
+  "name": "CRUDboard",
+  "version": "0.0.1",
+  "description": "CRUD Dashboard",
+  "scripts": {
+    "start": "PORT=1994 node server.js",
+    "compile": "webpack --config webpack-production.config.js --progress --colors",
+    "deploy": "PORT=1994 NODE_ENV=production node server.js",
+    "beta": "npm run compile && PORT=1994 NODE_ENV=beta node server.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-2": "^6.17.0",
+    "html-webpack-plugin": "^2.7.2",
+    "react-hot-loader": "^1.3.0",
+    "transfer-webpack-plugin": "^0.1.4",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-hot-middleware": "^2.13.0"
+  },
+  "dependencies": {
+    "axios": "^0.15.2",
+    "body-parser": "^1.15.2",
+    "co": "^4.6.0",
+    "material-ui": "^0.16.1",
+    "mysql": "^2.11.1",
+    "pg": "^6.1.0",
+    "pg-hstore": "^2.3.2",
+    "promise-redis": "0.0.5",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-tap-event-plugin": "^1.0.0",
+    "redis": "^2.6.2",
+    "sequelize": "^3.24.6"
+  }
+}
